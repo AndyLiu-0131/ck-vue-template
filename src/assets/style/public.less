@@ -1,0 +1,75 @@
+@import url('@/assets/varibles.less');
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html,
+body {
+  color: #333;
+  font-family: '微软雅黑';
+  font-size: 14px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.sys-main-container {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+.sys-right-container {
+  flex-grow: 1;
+}
+.animate {
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s; /* Safari */
+}
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.bread-list {
+  display: flex;
+  align-items: center;
+  .go-back {
+    color: 666;
+    display: flex;
+    align-items: center;
+    justify-content: middle;
+    cursor: pointer;
+    span {
+      padding-right: 4px;
+    }
+  }
+}
+.mg-top-15 {
+  margin-top: 15px;
+}
+// 滚动条样式
+*::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 10px; /*高宽分别对应横竖滚动条的尺寸*/
+  height: 10px;
+}
+*::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  background: #dddddd;
+}
+*::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: #ffffff;
+}
+// 覆盖组件样式
+.el-button--mini,
+.el-button--mini.is-round {
+  background: #f0f2f5;
+}
+.el-table--mini,
+.el-table--small,
+.el-table__expand-icon {
+  font-size: 14px;
+}

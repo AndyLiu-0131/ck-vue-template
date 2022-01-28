@@ -1,0 +1,16 @@
+.el-table__row{
+    font-size: 12px;
+}
+.el-table__header tr th .cell{
+    color: #333 !important;
+    font-size: 12px;
+}
+.el-table td, .el-table th{
+    padding: 8px 0;
+}
+.el-table .cell{
+    line-height: 20px;
+}
+.el-table__header .cell{
+    padding: 5px 0;
+}
